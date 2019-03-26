@@ -77,10 +77,11 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: 1000px;
     font-size: 3em;
     background-image: url(./img/007.1.jpg);
     background-size: cover;
+    background-position: center;
     color: lightgrey;
 }
 
@@ -115,6 +116,7 @@ a {
     height: 800px;
     background-image: url(./img/015.jpg);
     background-size: cover;
+    background-position: center;
     color: black;
 }
 
@@ -141,6 +143,14 @@ a {
     height: 600px;
     background-image: url(./img/008.jpg);
     background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .slide {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .pic {
@@ -151,6 +161,12 @@ a {
     transform: scale(1.4);
 }
 
+@media only screen and (max-width: 600px) {
+    .pic {
+        height: 120px;
+        width: 120px;
+    }
+}
 /*FOOTER*/
 footer {
     text-align: right;
